@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://www.bbc.co.uk/news/magazine-32396977 -->
+<html lang="en-GB" id="responsive-news" prefix="og: http://ogp.me/ns#" class="orb-js ctm ff flex grunticon">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"></style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>BBC News</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="orb.css">
+    <link type="text/css" rel="stylesheet" href="./test_files/core.css">
+    <link type="text/css" rel="stylesheet" href="animate.css">
+
+    <link rel="stylesheet" type="text/css" href="./test_files/wide.css" media="(min-width: 1008px)">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+
+    <style type="text/css">#edr_survey .edr_lwrap iframe {width:100%;height:100%;}#edr_survey .edr_go {opacity:0;display:block;filter:alpha(opacity = 0);position:absolute;font-size:0;background-color:#000;margin:0;padding:0;z-index:1000000;}#edr_survey .edr_go:focus {opacity:1;filter:alpha(opacity = 50);background-color:rgba(0, 0, 0, 0.1);}#edr_survey .edr_lb {position:fixed;top:0;left:0;right:0;bottom:0;z-index:999998;display:none;}</style>
+
+        <style type="text/css">#orb-footer-promo{width:100%;max-width:976px;overflow:hidden;position:relative;z-index:20;height:98px}#orb-footer-promo .navp-brand-asset{bottom:0;height:98px;z-index:-1}#orb-footer-promo .navp-items{bottom:0;position:absolute;right:0;top:0;z-index:5}#orb-footer-promo .navp-items li{display:block;height:78px;width:224px;margin:17px 8px 0 16px;position:relative}#orb-footer-promo img{float:left;width:auto;margin-right:12px}#orb-footer-promo .navp-brand-asset img{float:none;margin:0;max-height:98px}#orb-footer-promo .navp-image img{height:63px;width:112px}#orb-footer-promo .navp-image a,#orb-footer-promo .navp-image a:hover{line-height:16px;font-size:13px}#orb-footer-promo a,#orb-footer-promo a:hover{border:0;line-height:21px;text-decoration:none;font-size:18px;margin:0;padding:0}#orb-footer-promo a p,#orb-footer-promo a:hover p{font-weight:300}#orb-footer-promo .navp-image h3{padding:0}#orb-footer-promo a:hover h3{text-decoration:underline}#orb-footer-promo .navp-cta-image-wrapper{background:url(http://static.bbci.co.uk/navpromo/1.1.9/img/rgba-0-0-0-07.png) repeat scroll 0 0 transparent;position:absolute;height:25px;width:25px;left:0;bottom:15px;z-index:2;opacity:1;text-indent:-99999px;overflow:hidden}#orb-footer-promo .navp-cta-image{position:absolute;height:100%;width:100%;z-index:3;left:0;bottom:0;opacity:1;background:url(http://static.bbci.co.uk/navpromo/1.1.9/img/ctas.png) no-repeat}#orb-footer-promo a:focus .navp-cta-image-wrapper,#orb-footer-promo a:hover .navp-cta-image-wrapper{opacity:1;background-color:#000}#orb-footer-promo .navp-cta-image-blog{background-position:0 -25px}#orb-footer-promo .navp-cta-image-comment{background-position:0 -50px}#orb-footer-promo .navp-cta-image-download{background-position:0 -75px}#orb-footer-promo .navp-cta-image-favourite{background-position:0 -100px}#orb-footer-promo .navp-cta-image-gallery{background-position:0 -125px}#orb-footer-promo .navp-cta-image-game{background-position:0 -150px}#orb-footer-promo .navp-cta-image-iplayer{background-position:0 -175px}#orb-footer-promo .navp-cta-image-iplayer_radio{background-position:0 -200px}#orb-footer-promo .navp-cta-image-playlister{background-position:0 -225px}#orb-footer-promo .navp-cta-image-quiz{background-position:0 -250px}#orb-footer-promo .navp-cta-image-video{background-position:0 -275px}#orb-footer-promo .navp-cta-helper{visibility:hidden}#orb-footer-promo h3{margin:0;font-weight:700;padding:0}
+        </style>
+
+
+
+
+        <!-- DONE BY VINNY -->
+        <script src="jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                addNewNotification();
+                addNewNotification();
+                addNewNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+                addNotification();
+
+                $('#not-button').click(function () {
+                    showList();
+                    $('#notification-panel').slideToggle('slow', function() {
+
+                        if( $('.notification-items').height() > 600 ) {
+                            resizeDiv();
+                            $('.notification-items li:last-child').css('margin-bottom', '30px');
+                            window.onresize = function(event) {
+                                resizeDiv();
+                            }
+                        } else {
+                            $('.notification-items').css({'height': 'auto'});
+                        }
+
+                    });
+                    $('#not-num').fadeOut();
+
+                    if( $('#not-num').is(":hidden") ) {
+                        replaceNewToOldText();
+                        replaceNewToOldDot();
+                    }
+                });
+
+                $('#close-button').click( function() {
+                    $('#notification-panel').slideToggle('slow');
+                });
+
+                $('#scrollable-area').scroll(function () {
+                    var scroll = $(this).scrollTop();
+                    if (scroll > 0) {
+                        $("#notification-panel header").addClass("shadowAdded");
+                    }
+                    else {
+                        $("#notification-panel header").removeClass("shadowAdded");
+                    }
+                });
+
+                var children = $(".item");
+                var index = 0;
+
+                function showList() {
+                    if (index == children.length) return;
+                    children.eq(index++).addClass("fadeInDown");
+                    window.setTimeout(showList, 100);
+                    $('.not-num').fadeOut(500);
+                }
+
+                function resizeDiv() {
+                    vph = $(window).height() - 200;
+                    $('#scrollable-area').css({'height': vph + 'px'});
+                }
+
+                function replaceNewToOldText() {
+                    $(document.body).find('*').each(function() {
+                        if($(this).hasClass('notification-text-new')){ //class replacing..many ways to do this :)
+                            $(this).removeClass('notification-text-new');
+                            $(this).addClass('notification-text');
+                        }
+                    });
+                }
+
+                function replaceNewToOldDot() {
+                    $(document.body).find('*').each(function() {
+                        if($(this).hasClass('new-notification-dot')){ //class replacing..many ways to do this :)
+                            $(this).removeClass('new-notification-dot');
+                            $(this).addClass('new-notification-dot-white');
+                        }
+                    });
+                }
+
+                function addNewNotification() {
+                    $('.notification-items').append('<li class="item animated"><span class="new-notification-dot"></span><span class="iplayer-icon-holder"><img class="iplayer-icon" src="iplayer-icon.svg" alt="iPlayer"></span><p class="notification-text-new">Poldark episode 6 now available. Watch or download it now?</p><span class="episode-name"><img class="clock-icon" src="clock-icon.svg" alt="Clock">Episode 6</span><span class="notification-time">3 hours ago</span></li>');
+                }
+
+                function addNotification() {
+                    $('.notification-items').append('<li class="item animated"><span class="new-notification-dot-white"></span><span class="iplayer-icon-holder"><img class="iplayer-icon" src="iplayer-icon.svg" alt="iPlayer"></span><p class="notification-text">Masterchef new episode now available. Watch or download it now?</p><span class="episode-name">Episode 5</span><span class="notification-time">4 hours ago</span></li>');
+                }
+
+            });
+        </script>
+
+
+        <style>
+        .orb-nav-pri a { padding:.462em 12px .308em 12px; }
+        .orb-nav-links img { padding-top: .42em; }
+
+        .orb-nav-pri .orb-nav-notification a:focus, .orb-nav-pri .orb-nav-notification a:hover, .orb-nav-pri .orb-nav-notification a:active {
+            border-bottom-color: #0085D0;
+        }
+
+        #notification-panel {
+            display: none;
+            padding:16px 16px 0 16px;
+        }
+
+        #notification-panel section { margin-bottom: 8px; }
+
+        #notification-panel header { height:36px; }
+
+        #notification-panel header.shadowAdded {
+            -moz-box-shadow: 0 4px 2px -2px rgba(0,0,0,0.07);
+            -webkit-box-shadow: 0 4px 2px -2px rgba(0,0,0,0.07);
+            box-shadow: 0 4px 2px -2px rgba(0,0,0,0.07);
+        }
+
+        .notification-title {
+            font-size: 28px;
+            color: #000;
+            text-transform: uppercase;
+            display: inline-block;
+            font-family: 'Gill Sans';
+        }
+
+        .notification-header-icons {
+            display: inline-block;
+            float: right;
+        }
+
+        .notification-header-icons li {
+            display: block;
+            float: left;
+            line-height: 36px;
+        }
+
+        .setting-icon {
+            width:13px;
+            height: 13px;
+            border-right: 1px solid #C0C0BF;
+            margin-right: 16px;
+            padding-right: 16px;
+        }
+
+        .close-icon {
+            width: 13px;
+            height: 13px;
+        }
+
+        #scrollable-area {
+            width: 100%;
+            height: auto;
+            min-height: 89px;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .notification-items li {
+            padding:12px;
+            border-bottom:1px solid #F2F2F2;
+        }
+
+        .new-notification-dot {
+            width: 4px;
+            height: 4px;
+            border-radius: 100px;
+            background-color: #0085D0;
+            display: block;
+            margin-top: 4px;
+            float: left;
+        }
+
+        .new-notification-dot-white {
+            width: 4px;
+            height: 4px;
+            border-radius: 100px;
+            background-color: #ffffff;
+            display: block;
+            margin-top: 4px;
+            float: left;
+        }
+
+        .iplayer-icon-holder {
+            padding:0 25px 0 20px;
+        }
+
+        .iplayer-icon {
+            width: 10px;
+            height: 13px;
+            display: inline-block;
+        }
+
+        .notification-text {
+            width: 480px;
+            display: inline-block;
+            color: #000;
+            margin-right: 30px;
+        }
+
+        .notification-text-new {
+            width: 480px;
+            display: inline-block;
+            color: #000;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        .episode-name,
+        .notification-time {
+            width: 140px;
+            color: #A6A8AB;
+            display: inline-block;
+            border-left: 1px solid #A6A8AB;
+            padding-left:8px;
+        }
+
+        .clock-icon {
+            width: 11px;
+            height: 11px;
+            margin-right: 8px;
+            display: inline-block;
+        }
+
+        /*.item { opacity: 0; }*/
+
+        #not-button {
+            position: relative;
+        }
+
+        #not-num {
+            width: 6px;
+            height: 6px;
+            text-indent: -9999px;
+            text-align: center;
+            display: block;
+            font-family: 'Helvetica', sans-serif;
+            background: #0085D0;
+            color: white;
+            border-radius: 100%;
+            text-decoration: none;
+            position: absolute;
+            top: 9px;
+            right: 9px;
+        }
+
+        </style>
+
+        <!-- END OF DONE BY VINNY -->
+
+</head>
+<body id="asset-type-map" class="no-touch device--group4 device--wide">
+
+    <div class="direction">
+
+             <header id="orb-banner" role="banner"> <!--<![endif]--> <!--[if (lt IE 9) & (!IEMobile)]> <![if (IE 8)]> <header id="orb-banner" role="banner" class="orb-old-ie orb-ie8"> <![endif]> <![if (IE 7)]> <header id="orb-banner" role="banner" class="orb-old-ie orb-ie7"> <![endif]> <![if (IE 6)]> <header id="orb-banner" role="banner" class="orb-old-ie orb-ie6"> <![endif]> <![endif]-->
+                <div id="orb-header" class="orb-nav-pri orb-nav-pri-white orb-location-d orb-nav-dyn">
+
+                <div class="orb-nav-pri-container b-r b-g-p">
+                    <div class="orb-nav-section orb-nav-blocks">
+                        <a href="http://www.bbc.co.uk/">
+                            <img src="./test_files/bbc-blocks-dark.png" width="84" height="24" alt="BBC">
+                        </a>
+                    </div>
+
+            <section>
+
+                <div class="orb-skip-links">
+
+                    <h2>Accessibility links</h2>
+
+                    <ul>
+                        <li>
+                            <a href="#page">Skip to content</a>
+                        </li>
+                        <li>
+                            <a id="orb-accessibility-help" href="http://www.bbc.co.uk/accessibility/">Accessibility Help</a>
+                        </li>
+                    </ul>
+                </div>
+             </section>
+                <nav role="navigation" class="orb-nav">
+
+                <div class="orb-nav-section orb-nav-links orb-nav-focus" id="orb-nav-links">
+                    <h2>BBC navigation</h2>
+
+                </div>
+            </nav>
+
+            <div class="orb-nav-section orb-nav-search">
+                <a href="http://search.bbc.co.uk/search">
+                    <img src="./test_files/orb-search-dark.png" width="18" height="18" alt="Search the BBC">
+                </a>
+
+            </div>
+
+            </div>
+
+            <div id="orb-panels">
+                <div id="orb-panel-more" class="orb-panel" aria-labelledby="orb-nav-more">
+                    <div class="orb-panel-content b-g-p b-r orb-nav-sec">
+                        <h2 id="orb-panel-more-title">More<span class="orb-icon orb-icon-arrow"></span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> <!-- Styling hook for shared modules only -->
+
+    <!-- insert drop down panel here -->
+    <div id="notification-panel">
+
+        <header>
+
+            <div class="container-width-only column-clearfix">
+
+                <h2 class="notification-title">Notifications</h2>
+
+                <ul class="notification-header-icons">
+                    <li><a href="#"><img class="setting-icon" src="setting-icon.svg" alt="Settings"></a></li>
+                    <li><a href="#" id="close-button"><img class="close-icon" src="close-icon.svg" alt="Close"></a></li>
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section id="scrollable-area">
+
+            <div class="container-width-only column-clearfix">
+
+                <ul class="notification-items">
+
+                </ul>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- end of inserting drop down panel -->
+
+    <div id="orb-modules">
+    <div id="site-container">
+            <div class="site-brand site-brand--height" role="banner" aria-label="News">
+                        <div class="site-brand-inner site-brand-inner--height">
+                <div class="navigation navigation--primary">
+                    <a href="http://www.bbc.co.uk/news" id="brand">
+    <img class="brand__logo" src="./test_files/news.png" alt="BBC News">
+    </a>
+                                        <h2 class="navigation__heading off-screen">News navigation</h2>
+                    <a href="http://www.bbc.co.uk/news/magazine-32396977#core-navigation" class="navigation__section navigation__section--core" data-event="header">
+                        Sections                    </a>
+                    <div class="find-local-wide" id="find-local-wide">
+    <button class="find-local-wide__link">Find local news</button>
+</div>
+                </div>
+            </div>
+
+
+<div class="navigation navigation--wide">
+    <ul class="navigation-wide-list" role="navigation" aria-label="News" data-panel-id="js-navigation-panel-primary" style="padding-right: 72px; max-width: 920px;">
+                    <li class="">
+                <a href="http://www.bbc.co.uk/news" class="navigation-wide-list__link">
+                    <span>Home</span>
+                </a>
+                            </li>
+                    <li class="">
+                <a href="http://www.bbc.co.uk/news/uk" data-panel-id="js-navigation-panel-UK" class="navigation-wide-list__link">
+                    <span>UK</span>
+                </a>
+                            </li>
+                    <li class="">
+                <a href="http://www.bbc.co.uk/news/world" data-panel-id="js-navigation-panel-World" class="navigation-wide-list__link">
+                    <span>World</span>
+                </a>
+                            </li>
+                    <li class="">
+                <a href="http://www.bbc.co.uk/news/business" data-panel-id="js-navigation-panel-Business" class="navigation-wide-list__link">
+                    <span>Business</span>
+                </a>
+                            </li>
+                    <li class="">
+                <a href="http://www.bbc.co.uk/news/election/2015" data-panel-id="js-navigation-panel-Election_2015" class="navigation-wide-list__link">
+                    <span>Election 2015</span>
+                </a>
+                            </li>
+                    <li class="">
+                <a href="http://www.bbc.co.uk/news/technology" class="navigation-wide-list__link">
+                    <span>Tech</span>
+                </a>
+                            </li>
+                    <li class="">
+                <a href="http://www.bbc.co.uk/news/science_and_environment" class="navigation-wide-list__link">
+                    <span>Science</span>
+                </a>
+                            </li>
+                    <li class="">
+                <a href="http://www.bbc.co.uk/news/health" class="navigation-wide-list__link">
+                    <span>Health</span>
+                </a>
+                            </li>
+                    <li class="">
+                <a href="http://www.bbc.co.uk/news/education" data-panel-id="js-navigation-panel-Education" class="navigation-wide-list__link">
+                    <span>Education</span>
+                </a>
+                            </li>
+                    <li class="">
+                <a href="http://www.bbc.co.uk/news/entertainment_and_arts" class="navigation-wide-list__link">
+                    <span>Entertainment &amp; Arts</span>
+                </a>
+                            </li>
+                    <li class="">
+                <a href="http://www.bbc.co.uk/news/video_and_audio/video" class="navigation-wide-list__link">
+                    <span>Video &amp; Audio</span>
+                </a>
+                            </li>
+                    <li class="selected   invisible">
+                <a href="http://www.bbc.co.uk/news/magazine" class="navigation-wide-list__link navigation-arrow--open">
+                    <span>Magazine</span>
+                </a>
+                 <span class="off-screen">selected</span>            </li>
+                    <li class=" invisible">
+                <a href="http://www.bbc.co.uk/news/in_pictures" class="navigation-wide-list__link">
+                    <span>In Pictures</span>
+                </a>
+                            </li>
+                    <li class=" invisible">
+                <a href="http://www.bbc.co.uk/news/also_in_the_news" class="navigation-wide-list__link">
+                    <span>Also in the News</span>
+                </a>
+                            </li>
+                    <li class=" invisible">
+                <a href="http://www.bbc.co.uk/news/special_reports" class="navigation-wide-list__link">
+                    <span>Special Reports</span>
+                </a>
+                            </li>
+                    <li class=" invisible">
+                <a href="http://www.bbc.co.uk/news/explainers" class="navigation-wide-list__link">
+                    <span>Explainers</span>
+                </a>
+                            </li>
+                    <li class=" invisible">
+                <a href="http://www.bbc.co.uk/news/the_reporters" class="navigation-wide-list__link">
+                    <span>The Reporters</span>
+                </a>
+                            </li>
+                    <li class=" invisible">
+                <a href="http://www.bbc.co.uk/news/have_your_say" class="navigation-wide-list__link navigation-wide-list__link--last">
+                    <span>Have Your Say</span>
+                </a>
+                            </li>
+            <li class="navigation__more-button-container selected" style="left: 908px;">                    <button class="navigation__more-button navigation-arrow" data-panel-id="js-navigation-panel-primary">More<span class="off-screen"> sections</span></button>                </li></ul>
+</div><div class="navigation-panel navigation-panel--wide navigation-panel--closed js-navigation-panel-primary"><div class="navigation-panel__content"><div class="navigation-panel__inner"><ul class="navigation-panel-toplevel navigation-panel-toplevel--columnised-4"><li class="selected  ">
+                <a href="http://www.bbc.co.uk/news/magazine" class="navigation-panel-toplevel__link">
+                    <span>Magazine</span>
+                </a>
+                 <span class="off-screen">selected</span>            </li><li class=" ">
+                <a href="http://www.bbc.co.uk/news/in_pictures" class="navigation-panel-toplevel__link">
+                    <span>In Pictures</span>
+                </a>
+                            </li></ul><ul class="navigation-panel-toplevel navigation-panel-toplevel--columnised-4"><li class=" ">
+                <a href="http://www.bbc.co.uk/news/also_in_the_news" class="navigation-panel-toplevel__link">
+                    <span>Also in the News</span>
+                </a>
+                            </li><li class=" ">
+                <a href="http://www.bbc.co.uk/news/special_reports" class="navigation-panel-toplevel__link">
+                    <span>Special Reports</span>
+                </a>
+                            </li></ul><ul class="navigation-panel-toplevel navigation-panel-toplevel--columnised-4"><li class=" ">
+                <a href="http://www.bbc.co.uk/news/explainers" class="navigation-panel-toplevel__link">
+                    <span>Explainers</span>
+                </a>
+                            </li><li class=" ">
+                <a href="http://www.bbc.co.uk/news/the_reporters" class="navigation-panel-toplevel__link">
+                    <span>The Reporters</span>
+                </a>
+                            </li></ul><ul class="navigation-panel-toplevel navigation-panel-toplevel--columnised-4"><li class=" ">
+                <a href="http://www.bbc.co.uk/news/have_your_say" class="navigation-panel-toplevel__link">
+                    <span>Have Your Say</span>
+                </a>
+                            </li></ul></div></div></div>
+
+                    </div>
+
+
+
+        <div id="breaking-news-container" data-polling-url="http://polling.bbc.co.uk/news/latest_breaking_news?audience=Domestic" aria-live="polite"></div>
+
+                        <div class="container-width-only">
+                            <span class="index-title" id="comp-index-title" data-index-title-meta="{&quot;id&quot;:&quot;comp-index-title&quot;,&quot;type&quot;:&quot;index-title&quot;,&quot;handler&quot;:&quot;indexTitle&quot;,&quot;deviceGroups&quot;:null,&quot;opts&quot;:{&quot;alwaysVisible&quot;:false,&quot;onFrontPage&quot;:false},&quot;template&quot;:&quot;index-title&quot;}">
+        <span class="index-title__container">
+            <a href="http://www.bbc.co.uk/news/magazine">Magazine</a>
+        </span>
+    </span>
+                        </div>
+
+                  <div id="page" class="media-asset-page"> <div class="container-width-only column-clearfix"> <div class="media-asset column--half" role="main"> <div class="story-body"> <div class="story-inner"> <div class="player-wrapper"> <div id="media-thumbnail" class="media-placeholder enabled" data-asset-id="32396977"><img id="media-thumbnail" class="placeholder hide-placeholder" src="./test_files/bg_img.jpg"> <h1 class="story-body__h1" data-asset-uri="/news/magazine-32396977">You'll need to sign in or register to watch this article</h1> <p class="id4-cta" id="id4-cta-1"><span class="id4-cta-size-medium id4-cta-color-blue id4-cta-medium-blue"><a href="https://www.google.co.uk" class="id4-cta-signin id4-cta-button">Sign in</a><span class="id4-cta-with"></span> or <a href="https://www.google.co.uk" class="id4-cta-register">Register</a></span></p>
+<figcaption class="media-caption undefined"><span class="off-screen">Media caption</span> <span class="media-caption__text">Jaywick</span></figcaption></figure></div>  </div>  <div class="text-wrapper"> <div id="media-asset-page-text" class="contains-more-text">   <p class="date date--v1" data-seconds="1429744609" data-timestamp-inserted="true"><strong>23 April 2015</strong> Last updated at 00:16 BST </p>  <div class="map-body"> <p>Six months ago in a by-election, Clacton became the first constituency to elect a UKIP MP - heralding a "coming of age" for the party, according to its leader Nigel Farage.</p>
+      <div class="hide-wrapper extra-content"><p>Like all constituencies, Clacton has its own set of particular needs. But in 2010, one town within the constituency, Jaywick, was named the most deprived place in England, in the Department for Communities' <a href="https://www.gov.uk/government/statistics/english-indices-of-deprivation-2010" class="story-body__link-external">indices of deprivation</a>.</p><p>It is not a label of which the people of the town are proud - many would like the politicians that represent them to help turn around the fortunes of their home.</p><p>BBC News visited the town to find the part politics plays in people's day-to-day lives.</p><p>The candidates <a href="http://www.bbc.co.uk/news/politics/constituencies/E14000642" class="story-body__link">for the Clacton constituency</a> are:</p><p>Douglas Carswell (UKIP)</p><p>David Grace (Liberal Democrat)</p><p>Chris Southall (Green)</p><p>Giles Watling (Conservative)</p><p>Tim Young (Labour)</p><p><i>Video journalist: Ed Ram</i></p><div class="related-items"> <h2>Read more</h2>  <article> <div class="article-inner article-story-alsos"> <a href="http://www.bbc.co.uk/news/election-2015-32131029"><span class="cta">Election 2015: The place where one street could decide the MP</span></a> </div> </article>  <article> <div class="article-inner article-story-alsos"> <a href="http://www.bbc.co.uk/news/magazine-32217178"><span class="cta">Election 2015: The constituency that is much closer to Oslo than Westminster</span></a> </div> </article>  </div></div></div>  </div><div class="more-wrapper" style="display: block;"><a class="more-text" href="http://www.bbc.co.uk/news/magazine-32396977#" title="More information">More information</a></div> </div> </div> </div> <div class="share-wrapper"> <div class="share share--lightweight  show">
+            <a name="share-tools"></a>
+            <h2 class="share__title share__title--lightweight">
+        Share this story        <a href="http://www.bbc.co.uk/help/web/sharing.shtml">About&nbsp;sharing</a>
+    </h2>
+        <ul class="share__tools share__tools--lightweight">
+                            <li class="share__tool share__tool--email">
+        <a href="mailto:?subject=Shared%20from%20BBC%20News&body=http%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Fmagazine-32396977">
+            <span>Email</span>
+        </a>
+    </li>
+                            <li class="share__tool share__tool--facebook">
+        <a href="http://www.facebook.com/dialog/feed?app_id=58567469885&redirect_uri=http%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Fmagazine-32396977&link=http%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Fmagazine-32396977%3FSThisFB">
+            <span>Facebook</span>
+        </a>
+    </li>
+                            <li class="share__tool share__tool--twitter">
+        <a href="https://twitter.com/intent/tweet?text=BBC%20News%20-%20Election%202015%3A%20Politics%20in%20a%20poor%20seaside%20town&url=http%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Fmagazine-32396977" class="shortenUrl" data-social-url="https://twitter.com/intent/tweet?text=BBC+News+-+Election+2015%3A+Politics+in+a+poor+seaside+town&amp;url=" data-target-url="http://www.bbc.co.uk/news/magazine-32396977">
+            <span>Twitter</span>
+        </a>
+    </li>
+                            <li class="share__tool share__tool--whatsapp">
+        <a href="whatsapp://send?text=BBC%20News%20%7C%20Election%202015%3A%20Politics%20in%20a%20poor%20seaside%20town%20-%20http%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Fmagazine-32396977%3Focid%3Dwsnews_chatapps_whatsapp_msg_trial_link1">
+            <span>WhatsApp</span>
+        </a>
+    </li>
+                            <li class="share__tool share__tool--linkedin">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Fmagazine-32396977&title=Election%202015%3A%20Politics%20in%20a%20poor%20seaside%20town&summary=Jaywick%20was%20named%20most%20deprived%20place%20in%20England%20in%202010.%20It%20lies%20in%20the%20first%20constituency%20to%20elect%20a%20UKIP%20MP.&source=BBC">
+            <span>Linkedin</span>
+        </a>
+    </li>
+            </ul>
+</div>
+
+ </div> <div class="map-info-wrapper">  </div> </div> <div class="media-feeds column--half" role="complementary">    <div class="tabs media-tabs" id="media-tabs"> <ul role="tablist"> <li class="media-tab open" data-event="maprelated" id="media-asset-list-view__tab-1" role="presentation"> <a href="./test_files/test.html" role="tab" tabindex="0">Related<span class="off-screen"> selected</span></a> </li>  <li class="media-tab most-watched" data-event="mapmostwatched" id="media-asset-list-view__tab-2" role="presentation"> <a href="http://www.bbc.co.uk/news/magazine-32396977#transcluded1429781625511" role="tab" tabindex="-1">Most watched</a> </li>  <li class="media-tab" data-event="maptopstories" data-cps-id="video_and_audio/top_stories" id="media-asset-list-view__tab-3" role="presentation"> <a href="http://www.bbc.co.uk/news/video_and_audio/top_stories" role="tab" tabindex="-1">Top stories</a> </li> </ul> </div> <div class="media-panel panel-1 open" aria-labelledby="media-asset-list-view__tab-1" role="tabpanel"> <section class="media-feed primary-feed related-video-audio "> <h2 class="media-feed-title">Related video / audio</h2>    <div class="media-feed-grid">    <article class="media-feed-item nth-child-1" data-duration="3:06" data-headline="General election 2015: Week three of campaigning" data-date="1429310231" data-uri="/news/election-2015-32352371" data-picture="http://news.bbcimg.co.uk/media/images/82391000/jpg/_82391686_week3.jpg"> <a href="http://www.bbc.co.uk/news/election-2015-32352371"> <div class="media-thumbnail"> <img src="./test_files/_82391686_week3.jpg" alt="Week Three logo"> <div class="responsive-image__label"> <span class="icon video"></span> <span class="js-media-duration responsive-image__label-text">3:06</span> </div> </div> <span class="cta">Week three of election campaigning</span>    <div class="date date--v1" data-seconds="1429310231" data-datetime="17 April 2015" data-timestamp-inserted="true">17 April 2015</div>
+ </a> </article>    <article class="media-feed-item nth-child-2" data-duration="1:34" data-headline="Election 2015: All seven party manifestos in under two minutes" data-date="1429577532" data-uri="/news/election-2015-32388316" data-picture="http://news.bbcimg.co.uk/media/images/82017000/jpg/_82017812_finaldebatescomposite.jpg"> <a href="http://www.bbc.co.uk/news/election-2015-32388316"> <div class="media-thumbnail"> <img src="./test_files/_82017812_finaldebatescomposite.jpg" alt="Natalie Bennett, Nigel Farage, Nick Clegg, David Cameron, Ed Miliband, Nicola Sturgeon, Leanne Wood"> <div class="responsive-image__label"> <span class="icon video"></span> <span class="js-media-duration responsive-image__label-text">1:34</span> </div> </div> <span class="cta">Manifesto moments in 90 seconds</span>    <div class="date date--v1" data-seconds="1429577532" data-datetime="21 April 2015" data-timestamp-inserted="true">21 April 2015</div>
+ </a> </article>    <article class="media-feed-item nth-child-3" data-duration="1:56" data-headline="Election 2015: Polish migrants welcomed in Llanelli" data-date="1429623827" data-uri="/news/uk-wales-32397846" data-picture="http://news.bbcimg.co.uk/media/images/82458000/jpg/_82458508_polisg6242.jpg"> <a href="http://www.bbc.co.uk/news/uk-wales-32397846"> <div class="media-thumbnail"> <img src="./test_files/_82458508_polisg6242.jpg" alt="Polish priest"> <div class="responsive-image__label"> <span class="icon video"></span> <span class="js-media-duration responsive-image__label-text">1:56</span> </div> </div> <span class="cta">Polish migrants welcomed in Llanelli</span>    <div class="date date--v1" data-seconds="1429623827" data-datetime="21 April 2015" data-timestamp-inserted="true">21 April 2015</div>
+ </a> </article>   </div>   </section> </div>  <div class="media-panel panel-2 closed" aria-labelledby="media-asset-list-view__tab-2" role="tabpanel"> <section class="media-feed primary-feed most-watched open showmore" data-cps-id="most-watched"> <h2 class="media-feed-title">Most watched</h2> <div class="media-feed-placeholder">    <div class="media-feed-grid">    <article class="media-feed-item nth-child-1" data-duration="2:51" data-headline="Headlines from BBC News" data-date="1429758724" data-uri="/news/10318236" data-picture="http://news.bbcimg.co.uk/media/images/48351000/gif/_48351569_640x360-news.gif"> <a href="http://www.bbc.co.uk/news/10318236"> <div class="media-thumbnail"> <img src="./test_files/_48351569_640x360-news.gif" alt="BBC News Channel"> <div class="responsive-image__label"> <span class="icon audio"></span> <span class="js-media-duration responsive-image__label-text">2:51</span> </div> </div> <span class="cta">Headlines from BBC News</span>    <div class="date date--v1 relative-time" data-seconds="1429758724" data-datetime="23 April 2015" data-timestamp-inserted="true">6 hours ago</div>
+ </a> </article>   <div class="more-wrapper"><a class="more-text" href="http://www.bbc.co.uk/news/magazine-32396977#" data-cps-id="most-watched" title="Show More">Show More</a></div></div>   </div> </section> </div>  <div class="media-panel indexes panel-3 closed" aria-labelledby="media-asset-list-view__tab-3" role="tabpanel">  <section class="media-feed top_stories showmore js-postload open primary-feed" data-event="top_stories" data-cps-id="video_and_audio/top_stories"> <h2 class="media-feed-title">Top stories</h2> <div class="media-feed-placeholder"><div class="media-feed-grid">    <article class="media-feed-item nth-child-1" data-duration="1:32" data-headline="Organ donation &#39;gave so much comfort&#39;" data-date="1429777888" data-uri="/news/health-32426745" data-picture="http://news.bbcimg.co.uk/media/images/82505000/jpg/_82505150_82505149.jpg"> <a href="http://www.bbc.co.uk/news/health-32426745"> <div class="media-thumbnail"> <img src="./test_files/_82505150_82505149.jpg" alt="The twins with their mother - image courtesy of the Daily Mirror"> <div class="responsive-image__label"> <span class="icon video"></span> <span class="js-media-duration responsive-image__label-text">1:32</span> </div> </div> <span class="cta">Organ donation 'gave so much comfort'</span>    <div class="date date--v1 relative-time relative-time" data-seconds="1429777888" data-datetime="23 April 2015" data-timestamp-inserted="true">1 hour ago</div>
+ </a> </article>    <article class="media-feed-item nth-child-2" data-duration="2:34" data-headline="Tesco reports record £6.4bn loss" data-date="1429736892" data-uri="/news/business-32408755" data-picture="http://news.bbcimg.co.uk/media/images/82477000/jpg/_82477513_82477512.jpg"> <a href="http://www.bbc.co.uk/news/business-32408755"> <div class="media-thumbnail"> <img src="./test_files/_82477513_82477512.jpg" alt="Tesco sign"> <div class="responsive-image__label"> <span class="icon video"></span> <span class="js-media-duration responsive-image__label-text">2:34</span> </div> </div> <span class="cta">Tesco reports record £6.4bn loss</span>    <div class="date date--v1" data-seconds="1429736892" data-datetime="22 April 2015" data-timestamp-inserted="true">22 April 2015</div>
+ </a> </article>    <article class="media-feed-item nth-child-3" data-duration="1:42" data-headline="EU to hold emergency summit" data-date="1429761863" data-uri="/news/world-europe-32426056" data-picture="http://news.bbcimg.co.uk/media/images/82503000/jpg/_82503830_82503829.jpg"> <a href="http://www.bbc.co.uk/news/world-europe-32426056"> <div class="media-thumbnail"> <img src="./test_files/_82503830_82503829.jpg" alt="Migrants"> <div class="responsive-image__label"> <span class="icon video"></span> <span class="js-media-duration responsive-image__label-text">1:42</span> </div> </div> <span class="cta">EU to hold emergency summit</span>    <div class="date date--v1 relative-time relative-time" data-seconds="1429761863" data-datetime="23 April 2015" data-timestamp-inserted="true">5 hours ago</div>
+ </a> </article>    <article class="media-feed-item nth-child-4" data-duration="1:09" data-headline="Calbuco volcano erupts in Chile" data-date="1429753788" data-uri="/news/world-latin-america-32425767" data-picture="http://news.bbcimg.co.uk/media/images/82504000/jpg/_82504768_82504767.jpg"> <a href="http://www.bbc.co.uk/news/world-latin-america-32425767"> <div class="media-thumbnail"> <img src="./test_files/_82504768_82504767.jpg" alt="Calbuco Volcano, Chile"> <div class="responsive-image__label"> <span class="icon video"></span> <span class="js-media-duration responsive-image__label-text">1:09</span> </div> </div> <span class="cta">Calbuco volcano erupts in Chile</span>    <div class="date date--v1 relative-time relative-time" data-seconds="1429753788" data-datetime="23 April 2015" data-timestamp-inserted="true">7 hours ago</div>
+ </a> </article>    <article class="media-feed-item nth-child-5" data-duration="1:24" data-headline="Appeal for key Hillsborough witnesses" data-date="1429768719" data-uri="/news/uk-32426330" data-picture="http://news.bbcimg.co.uk/media/images/82504000/jpg/_82504187_hillsborough6composite624x351.jpg"> <a href="http://www.bbc.co.uk/news/uk-32426330"> <div class="media-thumbnail"> <img src="./test_files/_82504187_hillsborough6composite624x351.jpg" alt="Hillsborough witnesses sought"> <div class="responsive-image__label"> <span class="icon video"></span> <span class="js-media-duration responsive-image__label-text">1:24</span> </div> </div> <span class="cta">Appeal for key Hillsborough witnesses</span>    <div class="date date--v1 relative-time relative-time" data-seconds="1429768719" data-datetime="23 April 2015" data-timestamp-inserted="true">3 hours ago</div>
+ </a> </article>    <article class="media-feed-item nth-child-6" data-duration="1:27" data-headline="Exercise &#39;not key to obesity fight&#39;" data-date="1429771660" data-uri="/news/health-32426331" data-picture="http://news.bbcimg.co.uk/media/images/82504000/jpg/_82504235_82504234.jpg"> <a href="http://www.bbc.co.uk/news/health-32426331"> <div class="media-thumbnail"> <img src="./test_files/_82504235_82504234.jpg" alt="Woman running on treadmill in gym"> <div class="responsive-image__label"> <span class="icon video"></span> <span class="js-media-duration responsive-image__label-text">1:27</span> </div> </div> <span class="cta">Exercise 'not key to obesity fight'</span>    <div class="date date--v1 relative-time relative-time" data-seconds="1429771660" data-datetime="23 April 2015" data-timestamp-inserted="true">2 hours ago</div>
+ </a> </article>    <article class="media-feed-item nth-child-1" data-duration="2:25" data-headline="How the UK got a £30bn debt mountain" data-date="1429777969" data-uri="/news/business-32426333" data-picture="http://news.bbcimg.co.uk/media/images/82507000/jpg/_82507260_82505231.jpg"> <a href="http://www.bbc.co.uk/news/business-32426333"> <div class="media-thumbnail"> <img src="./test_files/_82507260_82505231.jpg" alt="The BBC&#39;s Steph McGovern reports on the UK debt mountain"> <div class="responsive-image__label"> <span class="icon video"></span> <span class="js-media-duration responsive-image__label-text">2:25</span> </div> </div> <span class="cta">How the UK got a £30bn debt mountain</span>    <div class="date date--v1 relative-time relative-time" data-seconds="1429777969" data-datetime="23 April 2015" data-timestamp-inserted="true">1 hour ago</div>
+ </a> </article>    <article class="media-feed-item nth-child-2" data-duration="2:09" data-headline="Yemen: Call for end to attacks" data-date="1429760181" data-uri="/news/world-middle-east-32426055" data-picture="http://news.bbcimg.co.uk/media/images/82503000/jpg/_82503812_82503811.jpg"> <a href="http://www.bbc.co.uk/news/world-middle-east-32426055"> <div class="media-thumbnail"> <img src="./test_files/_82503812_82503811.jpg" alt="Houthi supporters"> <div class="responsive-image__label"> <span class="icon video"></span> <span class="js-media-duration responsive-image__label-text">2:09</span> </div> </div> <span class="cta">Yemen: Call for end to attacks</span>    <div class="date date--v1 relative-time relative-time" data-seconds="1429760181" data-datetime="23 April 2015" data-timestamp-inserted="true">5 hours ago</div>
+ </a> </article>    <article class="media-feed-item nth-child-3" data-duration="2:25" data-headline="UK trader to fight extradition to US" data-date="1429740107" data-uri="/news/business-32421509" data-picture="http://news.bbcimg.co.uk/media/images/82499000/jpg/_82499906_traders.jpg"> <a href="http://www.bbc.co.uk/news/business-32421509"> <div class="media-thumbnail"> <img src="./test_files/_82499906_traders.jpg" alt="US stock markets plunged in minutes, before rebounding just as quickly"> <div class="responsive-image__label"> <span class="icon video"></span> <span class="js-media-duration responsive-image__label-text">2:25</span> </div> </div> <span class="cta">UK trader to fight extradition to US</span>    <div class="date date--v1" data-seconds="1429740107" data-datetime="22 April 2015" data-timestamp-inserted="true">22 April 2015</div>
+ </a> </article>    <article class="media-feed-item nth-child-4" data-duration="1:31" data-headline="Inside Hatton Garden heist vault" data-date="1429733623" data-uri="/news/uk-england-london-32414848" data-picture="http://news.bbcimg.co.uk/media/images/82489000/jpg/_82489353_de04.jpg"> <a href="http://www.bbc.co.uk/news/uk-england-london-32414848"> <div class="media-thumbnail"> <img src="./test_files/_82489353_de04.jpg" alt="Hole drilled by Hatton Garden burglars"> <div class="responsive-image__label"> <span class="icon video"></span> <span class="js-media-duration responsive-image__label-text">1:31</span> </div> </div> <span class="cta">Inside Hatton Garden heist vault</span>    <div class="date date--v1" data-seconds="1429733623" data-datetime="22 April 2015" data-timestamp-inserted="true">22 April 2015</div>
+ </a> </article>    <article class="media-feed-item nth-child-5" data-duration="3:32" data-headline="How will we pay for care in old age?" data-date="1429741618" data-uri="/news/election-2015-32421512" data-picture="http://news.bbcimg.co.uk/media/images/82502000/jpg/_82502562_82499993.jpg"> <a href="http://www.bbc.co.uk/news/election-2015-32421512"> <div class="media-thumbnail"> <img src="./test_files/_82502562_82499993.jpg" alt="Des and Vera Woodford"> <div class="responsive-image__label"> <span class="icon video"></span> <span class="js-media-duration responsive-image__label-text">3:32</span> </div> </div> <span class="cta">How will we pay for care in old age?</span>    <div class="date date--v1" data-seconds="1429741618" data-datetime="22 April 2015" data-timestamp-inserted="true">22 April 2015</div>
+ </a> </article>    <article class="media-feed-item nth-child-6" data-duration="2:06" data-headline="Four dead after Sydney storms" data-date="1429716415" data-uri="/news/world-australia-32420257" data-picture="http://news.bbcimg.co.uk/media/images/82493000/jpg/_82493547_82493546.jpg"> <a href="http://www.bbc.co.uk/news/world-australia-32420257"> <div class="media-thumbnail"> <img src="./test_files/_82493547_82493546.jpg" alt="Overturned power lines and a fire engine"> <div class="responsive-image__label"> <span class="icon video"></span> <span class="js-media-duration responsive-image__label-text">2:06</span> </div> </div> <span class="cta">Four dead after Sydney storms</span>    <div class="date date--v1" data-seconds="1429716415" data-datetime="22 April 2015" data-timestamp-inserted="true">22 April 2015</div>
+ </a> </article>   <div class="more-wrapper"><a class="more-text" href="http://www.bbc.co.uk/news/magazine-32396977#" data-cps-id="video_and_audio/top_stories" title="Show More">Show More</a></div></div></div> </section>    <section class="media-feed world" data-event="world" data-cps-id="video_and_audio/world"> <h2 class="media-feed-title">  <a href="http://www.bbc.co.uk/news/video_and_audio/world">World</a>  </h2> <div class="media-feed-placeholder">  </div> </section>   <section class="media-feed uk" data-event="uk" data-cps-id="video_and_audio/uk"> <h2 class="media-feed-title">  <a href="http://www.bbc.co.uk/news/video_and_audio/uk">UK</a>  </h2> <div class="media-feed-placeholder">  </div> </section>   <section class="media-feed business" data-event="business" data-cps-id="video_and_audio/business"> <h2 class="media-feed-title">  <a href="http://www.bbc.co.uk/news/video_and_audio/business">Business</a>  </h2> <div class="media-feed-placeholder">  </div> </section>   <section class="media-feed politics" data-event="politics" data-cps-id="video_and_audio/politics"> <h2 class="media-feed-title">  <a href="http://www.bbc.co.uk/news/video_and_audio/politics">Politics</a>  </h2> <div class="media-feed-placeholder">  </div> </section>   <section class="media-feed health" data-event="health" data-cps-id="video_and_audio/health"> <h2 class="media-feed-title">  <a href="http://www.bbc.co.uk/news/video_and_audio/health">Health</a>  </h2> <div class="media-feed-placeholder">  </div> </section>   <section class="media-feed science" data-event="science" data-cps-id="video_and_audio/science_and_environment"> <h2 class="media-feed-title">  <a href="http://www.bbc.co.uk/news/video_and_audio/science_and_environment">Science &amp; Environment</a>  </h2> <div class="media-feed-placeholder">  </div> </section>   <section class="media-feed technology" data-event="technology" data-cps-id="video_and_audio/technology"> <h2 class="media-feed-title">  <a href="http://www.bbc.co.uk/news/video_and_audio/technology">Technology</a>  </h2> <div class="media-feed-placeholder">  </div> </section>   <section class="media-feed entertainment" data-event="entertainment" data-cps-id="video_and_audio/entertainment_and_arts"> <h2 class="media-feed-title">  <a href="http://www.bbc.co.uk/news/video_and_audio/entertainment_and_arts">Entertainment</a>  </h2> <div class="media-feed-placeholder">  </div> </section>   </div>  </div> </div> </div>
+
+
+
+
+<div id="core-navigation" class="navigation--footer">
+    <h2 class="navigation--footer__heading">News navigation</h2>
+
+
+    <nav id="navigation--bottom" class="navigation navigation--bottom " role="navigation" aria-label="News">
+                    <span class="navigation-core-title">Sections</span>
+                <ul class="navigation--bottom__toplevel">
+                        <li class="">
+                    <a href="http://www.bbc.co.uk/news" class="">
+                        <span>Home</span>
+                    </a>
+                                                        </li>
+                            <li class="">
+                    <a href="http://www.bbc.co.uk/news/uk" data-panel-id="js-navigation-panel-UK" class="navigation-arrow">
+                        <span>UK</span>
+                    </a>
+                                                                <div class="navigation-panel navigation-panel--closed js-navigation-panel-UK">
+                            <div class="navigation-panel__content">
+                                <ul class="navigation-panel-secondary">
+                                    <li><a href="http://www.bbc.co.uk/news/uk"><span>UK Home</span></a></li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/england"><span>England</span></a>                                        </li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/northern_ireland"><span>N. Ireland</span></a>                                        </li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/scotland"><span>Scotland</span></a>                                        </li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/naidheachdan"><span>Alba</span></a>                                        </li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/wales"><span>Wales</span></a>                                        </li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/cymrufyw"><span>Cymru</span></a>                                        </li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                                    </li>
+                            <li class="">
+                    <a href="http://www.bbc.co.uk/news/world" data-panel-id="js-navigation-panel-World" class="navigation-arrow">
+                        <span>World</span>
+                    </a>
+                                                                <div class="navigation-panel navigation-panel--closed js-navigation-panel-World">
+                            <div class="navigation-panel__content">
+                                <ul class="navigation-panel-secondary">
+                                    <li><a href="http://www.bbc.co.uk/news/world"><span>World Home</span></a></li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/world/africa"><span>Africa</span></a>                                        </li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/world/asia"><span>Asia</span></a>                                        </li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/world/australia"><span>Australia</span></a>                                        </li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/world/europe"><span>Europe</span></a>                                        </li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/world/latin_america"><span>Latin America</span></a>                                        </li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/world/middle_east"><span>Middle East</span></a>                                        </li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/world/us_and_canada"><span>US &amp; Canada</span></a>                                        </li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                                    </li>
+                            <li class="">
+                    <a href="http://www.bbc.co.uk/news/business" data-panel-id="js-navigation-panel-Business" class="navigation-arrow">
+                        <span>Business</span>
+                    </a>
+                                                                <div class="navigation-panel navigation-panel--closed js-navigation-panel-Business">
+                            <div class="navigation-panel__content">
+                                <ul class="navigation-panel-secondary">
+                                    <li><a href="http://www.bbc.co.uk/news/business"><span>Business Home</span></a></li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/business/your_money"><span>Your Money</span></a>                                        </li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/business/market_data"><span>Market Data</span></a>                                        </li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/business/markets"><span>Markets</span></a>                                        </li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/business/companies"><span>Companies</span></a>                                        </li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/business/economy"><span>Economy</span></a>                                        </li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                                    </li>
+                            <li class="">
+                    <a href="http://www.bbc.co.uk/news/election/2015" data-panel-id="js-navigation-panel-Election_2015" class="navigation-arrow">
+                        <span>Election 2015</span>
+                    </a>
+                                                                <div class="navigation-panel navigation-panel--closed js-navigation-panel-Election_2015">
+                            <div class="navigation-panel__content">
+                                <ul class="navigation-panel-secondary">
+                                    <li><a href="http://www.bbc.co.uk/news/election/2015"><span>Election 2015 Home</span></a></li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/election/2015/live"><span>Live</span></a>                                        </li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/politics/constituencies"><span>Constituencies</span></a>                                        </li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/election/2015/manifesto-guide"><span>Policy Guide</span></a>                                        </li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/politics/poll-tracker"><span>Poll Tracker</span></a>                                        </li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/news/election-2015-32072999"><span>Reality Check</span></a>                                        </li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                                    </li>
+                            <li class="">
+                    <a href="http://www.bbc.co.uk/news/technology" class="">
+                        <span>Tech</span>
+                    </a>
+                                                        </li>
+                            <li class="">
+                    <a href="http://www.bbc.co.uk/news/science_and_environment" class="">
+                        <span>Science</span>
+                    </a>
+                                                        </li>
+                            <li class="">
+                    <a href="http://www.bbc.co.uk/news/health" class="">
+                        <span>Health</span>
+                    </a>
+                                                        </li>
+                            <li class="">
+                    <a href="http://www.bbc.co.uk/news/education" data-panel-id="js-navigation-panel-Education" class="navigation-arrow">
+                        <span>Education</span>
+                    </a>
+                                                                <div class="navigation-panel navigation-panel--closed js-navigation-panel-Education">
+                            <div class="navigation-panel__content">
+                                <ul class="navigation-panel-secondary">
+                                    <li><a href="http://www.bbc.co.uk/news/education"><span>Education Home</span></a></li>
+                                                                            <li>
+                                            <a href="http://www.bbc.co.uk/schoolreport"><span>School Report</span></a>                                        </li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                                    </li>
+                            <li class="">
+                    <a href="http://www.bbc.co.uk/news/entertainment_and_arts" class="">
+                        <span>Entertainment &amp; Arts</span>
+                    </a>
+                                                        </li>
+                            <li class="">
+                    <a href="http://www.bbc.co.uk/news/video_and_audio/video" class="">
+                        <span>Video &amp; Audio</span>
+                    </a>
+                                                        </li>
+                            <li class="selected ">
+                    <a href="http://www.bbc.co.uk/news/magazine" class="navigation-arrow--open">
+                        <span>Magazine</span>
+                    </a>
+                     <span class="off-screen">selected</span>                                    </li>
+                            <li class="">
+                    <a href="http://www.bbc.co.uk/news/in_pictures" class="">
+                        <span>In Pictures</span>
+                    </a>
+                                                        </li>
+                            <li class="">
+                    <a href="http://www.bbc.co.uk/news/also_in_the_news" class="">
+                        <span>Also in the News</span>
+                    </a>
+                                                        </li>
+                            <li class="">
+                    <a href="http://www.bbc.co.uk/news/special_reports" class="">
+                        <span>Special Reports</span>
+                    </a>
+                                                        </li>
+                            <li class="">
+                    <a href="http://www.bbc.co.uk/news/explainers" class="">
+                        <span>Explainers</span>
+                    </a>
+                                                        </li>
+                            <li class="">
+                    <a href="http://www.bbc.co.uk/news/the_reporters" class="">
+                        <span>The Reporters</span>
+                    </a>
+                                                        </li>
+                            <li class="">
+                    <a href="http://www.bbc.co.uk/news/have_your_say" class="">
+                        <span>Have Your Say</span>
+                    </a>
+                                                        </li>
+                    </ul>
+    </nav>
+</div>
+   <div id="services-bar" class="blue-tit" role="navigation" aria-label="BBC News Services">
+    <div class="blue-tit__inner">
+        <h2 class="blue-tit__title">BBC News Services</h2>
+        <ul class="blue-tit__list">
+            <li class="blue-tit__list-item">
+                <a href="http://www.bbc.co.uk/news/10628994" class="blue-tit__list-item-link mobile">On your mobile</a>
+            </li>
+            <li class="blue-tit__list-item">
+                <a href="http://www.bbc.co.uk/news/help-17655000" class="blue-tit__list-item-link connected-tv">On your connected TV</a>
+            </li>
+            <li class="blue-tit__list-item">
+                <a href="http://www.bbc.co.uk/news/10628323" class="blue-tit__list-item-link newsletter">Get news alerts</a>
+            </li>
+            <li class="blue-tit__list-item">
+                <a href="http://www.bbc.co.uk/news/20039682" class="blue-tit__list-item-link contact-us">Contact BBC News</a>
+            </li>
+        </ul>
+    </div>
+</div>
+ </div><!-- closes #site-container -->      </div> <div id="orb-footer" class="orb-footer orb-footer-grey orb-location-d"> <aside role="complementary"> <div id="orb-aside" class="orb-nav-sec b-r b-g-p"> <div class="orb-footer-inner" role="navigation"> <h2 class="orb-footer-lead">Explore the BBC</h2>  <div id="orb-footer-promo" class="orb-d orb-footer-promo-loaded"><div class="navp-brand-asset"><a href="http://www.bbc.co.uk/programmes/p02p2dtq?intc_type=promo&intc_location=orb_promo_footer&intc_campaign=comedyelection&intc_linkname=radio4_comedy_homepage" title="Radio Four Comedy Election"><img src="./test_files/p02pnmhv.png" alt="Radio Four Comedy Election"></a></div><ul class="navp-items"><li class="navp-image"><a href="http://www.bbc.co.uk/programmes/articles/15ND4l7J3chZ6Vh7NYyjNkp/alistair-beatons-parlez-vous-politics?intc_type=promo&intc_location=orb_promo_footer&intc_campaign=comedyelection&intc_linkname=radio4_comedy_article1"><span class="navp-item-image"><img src="./test_files/p02prvr4.jpg" alt=""></span><h3>What are they talking about? </h3><p>Try our guide to election speak</p></a></li><li class="navp-image"><a href="http://www.bbc.co.uk/programmes/p02pnj91?intc_type=promo&intc_location=orb_promo_footer&intc_campaign=comedyelection&intc_linkname=radio4_comedy_vidclip1"><span class="navp-item-image"><img src="./test_files/p02pnmfp.jpg" alt=""><span class="navp-cta-image-wrapper"><span class="navp-cta-image navp-cta-image-video">Video</span></span></span><h3>Can a cat predict the outcome of the election?</h3><p></p></a></li></ul></div>  <div class="orb-footer-primary-links"> <ul>    <li class="orb-nav-news orb-d"> <a href="http://www.bbc.co.uk/news/">News</a> </li>        <li class="orb-nav-sport"> <a href="http://www.bbc.co.uk/sport/">Sport</a> </li>    <li class="orb-nav-weather"> <a href="http://www.bbc.co.uk/weather/">Weather</a> </li>                    <li class="orb-nav-iplayer orb-d"> <a href="http://www.bbc.co.uk/iplayer/">iPlayer</a> </li>                <li class="orb-nav-tv"> <a href="http://www.bbc.co.uk/tv/">TV</a> </li>    <li class="orb-nav-radio"> <a href="http://www.bbc.co.uk/radio/">Radio</a> </li>    <li class="orb-nav-cbbc"> <a href="http://www.bbc.co.uk/cbbc/">CBBC</a> </li>    <li class="orb-nav-cbeebies"> <a href="http://www.bbc.co.uk/cbeebies/">CBeebies</a> </li>    <li class="orb-nav-arts orb-d"> <a href="http://www.bbc.co.uk/arts/">Arts</a> </li>    <li> <a href="http://www.bbc.co.uk/ww1/">WW1</a> </li>    <li class="orb-nav-food"> <a href="http://www.bbc.co.uk/food/">Food</a> </li>    <li class="orb-nav-history"> <a href="http://www.bbc.co.uk/history/">History</a> </li>    <li class="orb-nav-learning"> <a href="http://www.bbc.co.uk/learning/">Learning</a> </li>    <li class="orb-nav-music"> <a href="http://www.bbc.co.uk/music/">Music</a> </li>    <li class="orb-nav-science"> <a href="http://www.bbc.co.uk/science/">Science</a> </li>        <li class="orb-nav-earth orb-d"> <a href="http://www.bbc.com/earth/">Earth</a> </li>    <li class="orb-nav-local"> <a href="http://www.bbc.co.uk/local/">Local</a> </li>    <li class="orb-nav-travel orb-d"> <a href="http://www.bbc.co.uk/travel/">Travel</a> </li>    <li class="orb-nav-fullaz"> <a href="http://www.bbc.co.uk/a-z/">Full A-Z</a> </li>    </ul> </div> </div> </div> </aside> <footer role="contentinfo"> <div id="orb-contentinfo" class="orb-nav-sec b-r b-g-p"> <div class="orb-footer-inner"> <ul>        <li> <a href="http://www.bbc.co.uk/terms/">Terms of Use</a> </li>    <li> <a href="http://www.bbc.co.uk/aboutthebbc/">About the BBC</a> </li>    <li> <a href="http://www.bbc.co.uk/privacy/">Privacy Policy</a> </li>    <li> <a href="http://www.bbc.co.uk/privacy/cookies/about">Cookies</a> </li>    <li> <a href="http://www.bbc.co.uk/accessibility/">Accessibility Help</a> </li>    <li> <a href="http://www.bbc.co.uk/guidance/">Parental Guidance</a> </li>    <li> <a href="http://www.bbc.co.uk/contact/">Contact the BBC</a> </li>        </ul> <small> <span class="orb-hilight">Copyright © 2015 BBC.</span> The BBC is not responsible for the content of external sites. <a href="http://www.bbc.co.uk/help/web/links/" class="orb-hilight">Read about our approach to external linking.</a> </small> </div> </div> </footer> </div>     <!-- BBCDOTCOM bodyLast --><div class="bbccom_display_none">
+
+</div>
+<div id="edr_survey"></div>
+</body>
+</html>
