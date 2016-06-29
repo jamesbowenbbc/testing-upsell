@@ -28,7 +28,6 @@
         <script src="jquery.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
-
                 addNewNotification();
                 addNewNotification();
                 addNewNotification();
@@ -71,11 +70,9 @@
                 addNotification();
                 addNotification();
                 addNotification();
-
                 $('#not-button').click(function () {
                     showList();
                     $('#notification-panel').slideToggle('slow', function() {
-
                         if( $('.notification-items').height() > 600 ) {
                             resizeDiv();
                             $('.notification-items li:last-child').css('margin-bottom', '30px');
@@ -85,20 +82,16 @@
                         } else {
                             $('.notification-items').css({'height': 'auto'});
                         }
-
                     });
                     $('#not-num').fadeOut();
-
                     if( $('#not-num').is(":hidden") ) {
                         replaceNewToOldText();
                         replaceNewToOldDot();
                     }
                 });
-
                 $('#close-button').click( function() {
                     $('#notification-panel').slideToggle('slow');
                 });
-
                 $('#scrollable-area').scroll(function () {
                     var scroll = $(this).scrollTop();
                     if (scroll > 0) {
@@ -108,22 +101,18 @@
                         $("#notification-panel header").removeClass("shadowAdded");
                     }
                 });
-
                 var children = $(".item");
                 var index = 0;
-
                 function showList() {
                     if (index == children.length) return;
                     children.eq(index++).addClass("fadeInDown");
                     window.setTimeout(showList, 100);
                     $('.not-num').fadeOut(500);
                 }
-
                 function resizeDiv() {
                     vph = $(window).height() - 200;
                     $('#scrollable-area').css({'height': vph + 'px'});
                 }
-
                 function replaceNewToOldText() {
                     $(document.body).find('*').each(function() {
                         if($(this).hasClass('notification-text-new')){ //class replacing..many ways to do this :)
@@ -132,7 +121,6 @@
                         }
                     });
                 }
-
                 function replaceNewToOldDot() {
                     $(document.body).find('*').each(function() {
                         if($(this).hasClass('new-notification-dot')){ //class replacing..many ways to do this :)
@@ -141,15 +129,12 @@
                         }
                     });
                 }
-
                 function addNewNotification() {
                     $('.notification-items').append('<li class="item animated"><span class="new-notification-dot"></span><span class="iplayer-icon-holder"><img class="iplayer-icon" src="iplayer-icon.svg" alt="iPlayer"></span><p class="notification-text-new">Poldark episode 6 now available. Watch or download it now?</p><span class="episode-name"><img class="clock-icon" src="clock-icon.svg" alt="Clock">Episode 6</span><span class="notification-time">3 hours ago</span></li>');
                 }
-
                 function addNotification() {
                     $('.notification-items').append('<li class="item animated"><span class="new-notification-dot-white"></span><span class="iplayer-icon-holder"><img class="iplayer-icon" src="iplayer-icon.svg" alt="iPlayer"></span><p class="notification-text">Masterchef new episode now available. Watch or download it now?</p><span class="episode-name">Episode 5</span><span class="notification-time">4 hours ago</span></li>');
                 }
-
             });
         </script>
 
@@ -157,26 +142,20 @@
         <style>
         .orb-nav-pri a { padding:.462em 12px .308em 12px; }
         .orb-nav-links img { padding-top: .42em; }
-
         .orb-nav-pri .orb-nav-notification a:focus, .orb-nav-pri .orb-nav-notification a:hover, .orb-nav-pri .orb-nav-notification a:active {
             border-bottom-color: #0085D0;
         }
-
         #notification-panel {
             display: none;
             padding:16px 16px 0 16px;
         }
-
         #notification-panel section { margin-bottom: 8px; }
-
         #notification-panel header { height:36px; }
-
         #notification-panel header.shadowAdded {
             -moz-box-shadow: 0 4px 2px -2px rgba(0,0,0,0.07);
             -webkit-box-shadow: 0 4px 2px -2px rgba(0,0,0,0.07);
             box-shadow: 0 4px 2px -2px rgba(0,0,0,0.07);
         }
-
         .notification-title {
             font-size: 28px;
             color: #000;
@@ -184,18 +163,15 @@
             display: inline-block;
             font-family: 'Gill Sans';
         }
-
         .notification-header-icons {
             display: inline-block;
             float: right;
         }
-
         .notification-header-icons li {
             display: block;
             float: left;
             line-height: 36px;
         }
-
         .setting-icon {
             width:13px;
             height: 13px;
@@ -203,12 +179,10 @@
             margin-right: 16px;
             padding-right: 16px;
         }
-
         .close-icon {
             width: 13px;
             height: 13px;
         }
-
         #scrollable-area {
             width: 100%;
             height: auto;
@@ -216,12 +190,10 @@
             overflow-y: scroll;
             -webkit-overflow-scrolling: touch;
         }
-
         .notification-items li {
             padding:12px;
             border-bottom:1px solid #F2F2F2;
         }
-
         .new-notification-dot {
             width: 4px;
             height: 4px;
@@ -231,7 +203,6 @@
             margin-top: 4px;
             float: left;
         }
-
         .new-notification-dot-white {
             width: 4px;
             height: 4px;
@@ -241,24 +212,20 @@
             margin-top: 4px;
             float: left;
         }
-
         .iplayer-icon-holder {
             padding:0 25px 0 20px;
         }
-
         .iplayer-icon {
             width: 10px;
             height: 13px;
             display: inline-block;
         }
-
         .notification-text {
             width: 480px;
             display: inline-block;
             color: #000;
             margin-right: 30px;
         }
-
         .notification-text-new {
             width: 480px;
             display: inline-block;
@@ -266,7 +233,6 @@
             font-weight: bold;
             margin-right: 30px;
         }
-
         .episode-name,
         .notification-time {
             width: 140px;
@@ -275,20 +241,16 @@
             border-left: 1px solid #A6A8AB;
             padding-left:8px;
         }
-
         .clock-icon {
             width: 11px;
             height: 11px;
             margin-right: 8px;
             display: inline-block;
         }
-
         /*.item { opacity: 0; }*/
-
         #not-button {
             position: relative;
         }
-
         #not-num {
             width: 6px;
             height: 6px;
@@ -304,7 +266,6 @@
             top: 9px;
             right: 9px;
         }
-
         </style>
 
         <!-- END OF DONE BY VINNY -->
@@ -558,7 +519,7 @@
 
                   <div id="page" class="media-asset-page"> <div class="container-width-only column-clearfix"> <div class="media-asset column--half" role="main"> <div class="story-body"> <div class="story-inner"> <div class="player-wrapper"> <div id="media-thumbnail" class="media-placeholder enabled" data-asset-id="32396977"><img id="media-thumbnail" class="placeholder hide-placeholder" src="./test_files/bg_img.jpg"> <h1 class="story-body__h1" data-asset-uri="/news/magazine-32396977">You are now signed in</h1> 
 <figcaption class="media-caption undefined"><span class="off-screen">Media caption</span> <span class="media-caption__text">Jaywick</span></figcaption></figure></div>  </div>  <div class="text-wrapper"> <div id="media-asset-page-text" class="contains-more-text">   <p class="date date--v1" data-seconds="1429744609" data-timestamp-inserted="true"><strong>23 April 2015</strong> Last updated at 00:16 BST </p>  <div class="map-body"> <p>Adele Laurie Blue Adkins MBE (born 5 May 1988) is an English singer and songwriter. Graduating from the BRIT School for Performing Arts and Technology in 2006, Adele was given a recording contract by XL Recordings after a friend posted her demo on Myspace the same year. In 2007, she received the Brit Awards "Critics' Choice" award and won the BBC Sound of 2008 poll. Her debut album, 19, was released in 2008 to commercial and critical success. It is certified seven times platinum in the UK, and double platinum in the US. An appearance she made on Saturday Night Live in late 2008 boosted her career in the US. At the 51st Annual Grammy Awards in 2009, Adele received the awards for Best New Artist and Best Female Pop Vocal Performance.</p>
-      <div class="hide-wrapper extra-content"><p>Adele released her second studio album, 21, in early 2011. The album was well received critically and surpassed the success of her debut, earning the singer numerous awards in 2012, including a record-tying six Grammy Awards, including Album of the Year; two Brit Awards, including British Album of the Year, and three American Music Awards. The album has been certified 16 times platinum in the UK, and is the fourth best-selling album in the UK of all time. In the US it has held the top position longer than any album since 1985, and is certified Diamond. The album has sold 31 million copies worldwide.</p><div class="more-wrapper" style="display: block;"><a class="more-text" href="http://www.bbc.co.uk/news/magazine-32396977#" title="More information">More information</a></div> </div> </div> </div><div class="share-wrapper"> <div class="share share--lightweight  show">
+      <div class="hide-wrapper extra-content"><p>Adele released her second studio album, 21, in early 2011. The album was well received critically and surpassed the success of her debut, earning the singer numerous awards in 2012, including a record-tying six Grammy Awards, including Album of the Year; two Brit Awards, including British Album of the Year, and three American Music Awards. The album has been certified 16 times platinum in the UK, and is the fourth best-selling album in the UK of all time. In the US it has held the top position longer than any album since 1985, and is certified Diamond. The album has sold 31 million copies worldwide.</p><p>It is not a label of which the people of the town are proud - many would like the politicians that represent them to help turn around the fortunes of their home.</p><p>BBC News visited the town to find the part politics plays in people's day-to-day lives.</p><p>The candidates <a href="http://www.bbc.co.uk/news/politics/constituencies/E14000642" class="story-body__link">for the Clacton constituency</a> are:</p><p>Douglas Carswell (UKIP)</p><p>David Grace (Liberal Democrat)</p><p>Chris Southall (Green)</p><p>Giles Watling (Conservative)</p><p>Tim Young (Labour)</p><p><i>Video journalist: Ed Ram</i></p><div class="related-items"> <h2>Read more</h2>  <article> <div class="article-inner article-story-alsos"> <a href="http://www.bbc.co.uk/news/election-2015-32131029"><span class="cta">Election 2015: The place where one street could decide the MP</span></a> </div> </article>  <article> <div class="article-inner article-story-alsos"> <a href="http://www.bbc.co.uk/news/magazine-32217178"><span class="cta">Election 2015: The constituency that is much closer to Oslo than Westminster</span></a> </div> </article>  </div></div></div>  </div><div class="more-wrapper" style="display: block;"><a class="more-text" href="http://www.bbc.co.uk/news/magazine-32396977#" title="More information">More information</a></div> </div> </div> </div> <div class="share-wrapper"> <div class="share share--lightweight  show">
             <a name="share-tools"></a>
             <h2 class="share__title share__title--lightweight">
         Share this story        <a href="http://www.bbc.co.uk/help/web/sharing.shtml">About&nbsp;sharing</a>
